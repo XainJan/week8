@@ -1,4 +1,40 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<div class="container-fluid bg-primary-200 position-relative">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+        <h2 class="fm-shrik text-white fst-italic m-0"><a class="text-reset" href="./index.html">ALPHABOX+</a></h2>
+        <ul class="d-lg-flex d-none text-white m-0 ">
+            <li class="me-lg-6 hvr-float"><a class="text-reset" href="#">產品</a></li>
+            <li class="me-lg-6 hvr-float "><a class="text-reset" href="./about.html">關於我們</a></li>
+            <li class="me-lg-6 hvr-float"><a class="text-reset" href="#">最新消息</a></li>
+            <li class="me-lg-6 hvr-float"><a class="text-reset" href="#">FAQ</a></li>
+            <li class="me-lg-6 hvr-float"><a class="text-reset" href="#">聯絡我們</a></li>
+        </ul>
+        <ul class="d-lg-flex d-none text-white m-0 align-items-center align-self-stretch">
+            <li class="me-lg-4"><a class="text-reset" href="#">註冊</a></li>
+            <li class="me-lg-4"><a class="text-reset" href="#">登入</a></li>
+            <li class="bg-white text-black align-self-stretch rounded-1"><a class=" px-3 py-2 h-100 text-reset d-flex align-items-center hvr-icon-grow" href="#">
+                <span class="material-symbols-outlined hvr-icon">point_scan</span>訂閱</a></li>
+        </ul>
+        
+        <button class="btn d-lg-none "  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <span class="material-symbols-outlined text-white fs-1">menu</span>
+        </button>
+        <div class="collapse position-absolute w-100 top-100 start-0 bg-gradient-menu d-lg-none z-index-1" id="collapseExample">
+            <div class="container text-center">
+                <ul class="p-0 d-inline-flex flex-column mx-auto text-white">
+                    <li class="py-2 mb-1"><a class="text-reset" href="#">產品</a></li>
+                    <li class="py-2 mb-1"><a class="text-reset" href="./about.html">關於我們</a></li>
+                    <li class="py-2 mb-1"><a class="text-reset" href="#">最新消息</a></li>
+                    <li class="py-2 mb-1"><a class="text-reset" href="#">FAQ</a></li>
+                    <li class="py-2 mb-1"><a class="text-reset" href="#">聯絡我們</a></li>
+                    <li class="py-2 mb-1"><a class="text-reset" href="#">註冊</a></li>
+                    <li class="py-2 mb-1"><a class="text-reset" href="#">登入</a></li>
+                    <li class="bg-white text-black align-self-stretch rounded-1">
+                        <a class=" px-3 py-2 h-100 text-reset d-inline-flex align-items-center hvr-icon-grow" href="#">
+                            <span class="material-symbols-outlined hvr-icon">point_scan</span>訂閱
+                         </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

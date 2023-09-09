@@ -1,0 +1,222 @@
+.fm-shrik{
+    font-family:Shrikhand;
+}
+.fm-saira{
+    font-family: Saira Extra Condensed;
+}
+.fw-900{
+    font-weight: 900;
+}
+.fw-500{
+    font-weight: 500;
+}
+.img-w-100{
+    width: 100%;
+    height: auto;
+}
+.hover-shadow{
+    transition: filter 0.5s;
+    &:hover{
+    filter: drop-shadow(0 0 8px #8F00FFCC);
+    }   
+}
+.rotate-180{
+    transform: rotate(180deg);
+}
+.letter-250{
+    letter-spacing:2rem * 2.5; 
+    
+    @media (max-width: 1849.98px) { 
+        letter-spacing:2rem * 2.0;
+     }
+     @media (max-width: 1599.98px) { 
+        letter-spacing:2rem * 1.5;
+     }
+     @media (max-width: 1329.98px) { 
+        letter-spacing:2rem * 0.9;
+     }
+     @media (max-width: 575.98px) {
+        letter-spacing: 2rem*0.7;
+    }
+}
+.translate-middleX-top16{
+transform: translate(-50%,16px);
+}
+.z-index-1{
+    z-index: 1;
+}
+.border-lg-end{
+    border-right: 1px solid;
+    @media (max-width: 992px) { border-right:0 !important;}
+   
+}
+
+.obstruct{
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        background-color: #000000 ;
+        z-index:0;
+        
+
+        @media (max-width: 992px) {
+            opacity: 0.5;
+           
+         }
+    }
+  
+  &:hover::after{
+    transition: opacity ,.5s;
+    opacity: 0.5;
+  }
+ }
+
+.letter-0{
+    letter-spacing: normal;
+}
+.letter-100{
+    letter-spacing:1em;
+
+    @media (max-width: 1799.98px) { 
+        letter-spacing:1rem * 0.7;
+     }
+     @media (max-width: 1549.98px) { 
+        letter-spacing:1rem * 0.4;
+     }
+     @media (max-width: 1299.98px) { 
+        letter-spacing:1rem * 0.2;
+     }
+}
+.swiper-scrollbar{
+    background: rgba(255, 255, 255, 0.2);
+}
+.swiper-scrollbar-drag {
+    background: #ffffff !important;
+  }
+.letter{
+    letter-spacing:1em;
+}
+
+.objet-fit{
+    object-fit:cover;
+    object-position: top center;
+    
+}
+.lg-ratio-1x1{
+    @media (max-width: 992px) {
+        --bs-aspect-ratio: 100% !important;
+    }
+}
+//動畫旋轉360
+.animation-rolate{
+    animation-name: rolate-360;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes rolate-360{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+//自定義背景
+.bg-gradient-menu{
+    @include gradient-y($primary-300, $primary-500);
+}
+
+.bg-gradiendt{
+    @include radial-gradient(#300871,#000000);
+}
+.bg-gradient-use{
+    @include radial-gradient(#000000,#28085C);
+}
+.bg-gradientX{
+    @include gradient-x($primary-300, $primary-500);
+}
+.bg-carousel{
+    background-image: url(../images/carousel_background.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: end;
+    
+}
+.bg-home{
+    background-image: url(../images/home_background.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top;
+}
+.bg-diane{
+    background-image:url(../images/diane_vertical.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.bg-felix{
+    background-image:url(../images/felix_vertical.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.bg-karina{
+    background-image:url(../images/karina_verticalgle.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.bg-vito{
+    background-image:url(../images/vito_vertical.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.bg-about-us{
+    background-image: url(../images/about_us.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-about-us-mobile{
+    background-image: url(../images/about_us_mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+//自定義容器
+.custom-container {
+    @include make-container(12px);
+   // Small devices (landscape phones, 576px and up)
+   @media (min-width: 576px) { max-width: 540px; }
+
+   // Medium devices (tablets, 768px and up)
+   @media (min-width: 768px) { max-width: 720px; }
+   
+   // Large devices (desktops, 992px and up)
+   @media (min-width: 992px) {max-width: 960px;}
+   
+   // X-Large devices (large desktops, 1200px and up)
+   @media (min-width: 1200px) { max-width: 1140px; }
+   
+   // XX-Large devices (larger desktops, 1400px and up)
+   @media (min-width: 1400px) { max-width: 1784px; }
+        
+  }
+
+  //arrow
+  .carousel-control{
+    background: none;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-button-prev,.swiper-button-next {
+    &::after{
+        content: none;
+    }
+  }

@@ -4,54 +4,384 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <%- include('./layout/google-icon'); -%>
+    <title>ALPHABOX+</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
+    <div class="container-fluid bg-home">
+      <div class="custom-container  pt-7 ">
+          <div class="row text-white mb-lg-7">
+            <div class="col-xxl-3 col-4 d-lg-flex d-none align-items-end fw-bold ">
+              <p class="m-0 w-100 border-bottom pb-lg-2">
+                <a class="text-reset fs-xxxl-6 fs-10" href="#">
+                最新消息！新版本 v15.4 釋出，搶先體驗！
+                </a>
+              </p>
+            </div>
+            <div class="col-lg-4 col-xxl-6 col-12 d-flex justify-content-center mb-lg-0 mb-8 ">
+              <img class="animation-rolate" style="width: 196px;" src="../assets/images/circle.png" alt="alphabox+">
+            </div>
+            <div class="col-lg-4 col-xxl-3 col-12 order-lg-3 order-first">
+              <ul class="p-0 m-0 d-flex flex-column justify-content-between h-100 border-top pt-2 pt-lg-1">
+                <li class="fw-bold">ALPHABOX+ STUDIO</li>
+                <li class="text-primary-100 d-lg-block d-none">Copyright © 2023 Hexschool.</li>
+              </ul>
+            </div>
+            <div class="col d-lg-none d-block">
+              <h2 class="text-center letter-250 fst-italic fm-shrik">ALPHABOX<span class="letter-0">+</span></h2>
+              <p class="text-center letter-100">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+            </div>
+          </div>
+          <div class="row text-white gy-lg-0 gy-3 ">
+            <div  class="col-lg-3 col-12 position-relative ">
+              <div class="lg-ratio-1x1 ratio h-100">
+                <a class="hover-shadow" href="#"><img class="img-w-100 h-100 objet-fit w" src="../assets/images/diane.png" alt="diane"></a>
+              </div>  
+              <h2 class="position-absolute top-0 start-50 translate-middleX-top16 fm-shrik fst-italic">Diane</h2>
+            </div>
+            <div class="col-lg-3 col-12 position-relative z-inedx-1 d-lg-none d-block">
+              <div class="lg-ratio-1x1 ratio h-100">
+                <a class="hover-shadow" href="#"><img class="img-w-100 h-100 objet-fit" src="../assets/images/felix.png" alt="felix"></a>
+              </div>
+              <h2 class="position-absolute top-0 start-50 translate-middleX-top16 fm-shrik fst-italic">Felix</h2>
+            </div>
+             <div class="col-lg-3 col-12 position-relative d-lg-none d-block">
+              <div class="lg-ratio-1x1 ratio h-100">
+                <a class="hover-shadow" href="#"><img class="img-w-100 h-100 objet-fit" src="../assets/images/karina.png" alt="karina"></a>
+              </div>
+              <h2 class="position-absolute top-0 start-50 translate-middleX-top16 fm-shrik fst-italic">Karina</h2>
+            </div>
 
-    <h1 class="index-title">我是首頁</h1>
+            <div class="col-6 d-flex flex-column justify-content-between d-lg-block d-none">
+              <div class="row ">
+                <div class="col">
+                  <h2 class="text-center letter-250 fst-italic fm-shrik">ALPHABOX<span class="letter-0">+</span></h2>
+                  <p class="text-center letter-100">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 position-relative ">
+                  <a class="hover-shadow" href="#"><img class="img-fluid h-100 objet-fit" src="../assets/images/felix.png" alt="felix"></a>
+                  <h2 class="position-absolute top-0 start-50 translate-middleX-top16 fm-shrik fst-italic">Felix</h2>
+                </div>
+                <div class="col-6 position-relative ">
+                  <a class="hover-shadow" href="#"><img class="img-fluid h-100 objet-fit" src="../assets/images/karina.png" alt="karina"></a>
+                  <h2 class="position-absolute top-0 start-50 translate-middleX-top16 fm-shrik fst-italic">Karina</h2>
+                </div>
+              </div>
+            </div>
 
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
+            <div class="col-lg-3 col-12 position-relative">
+              <div class="lg-ratio-1x1 ratio h-100">
+                <a class="hover-shadow" href="#"><img class="img-w-100 h-100 objet-fit" src="../assets/images/vito.png" alt="vito"></a>
+              </div>
+              <h2 class="position-absolute top-0 start-50 translate-middleX-top16 fm-shrik fst-italic">Vito</h2>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-gradiendt p-0 position-relative">
+      <div style="max-width:948px;" class="bg-carousel position-absolute z-inedx w-100 h-100"></div>
+      
+      <div class="custom-container   pt-lg-6 pt-8 position-relative">
+        <div style="height: 40px;" class="bg-gradientX mb-lg-2 mb-3"></div>
+        <h2 class="fs-lg-7 fs-4 letter text-white mb-lg-8 mb-2 position-relative">什麼是</h2>
+        <p class="fs-lg-7 fs-4 letter text-white mb-lg-3 mb-10 position-relative">ALPHABOX+</p>
+      </div>
+      <div class="container-fluid border border-white mb-lg-8 mb-3 position-relative"></div>
+      
+      <div class="custom-container position-relative d-flex align-items-center" >
+        <div style="position: initial;width: 180px;" class="swiper-button-prev">
+          <img class="img-fluid rotate-180" src="../assets/images/line_end_arrow_notch.png" alt="">
+        </div>
+        <div class="container">
+          <div class="swiper myswiper">
+          <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide px-1 ratio ratio-21x9">
+                <img class="img-w-100 h-100 objet-fit" src="../assets/images/carousel.png" alt="carousel">
+                <div class="position-absolute top-0 bottom-0 end-0 start-0 text-white d-flex flex-column align-lg-items-end justify-content-lg-center justify-content-end align-items-lg-end p-lg-6 p-3">
+                  <h2 class="fs-lg-9 fs-8 fm-shrik fst-italic p-">01</h2>
+                  <p class="letter fs-lg-2 fs-4 fw-bold mb-lg-3 mb-2 ">立體投影技<span class="letter-0">術</span></p>
+                  <p class="fw-bold">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                </div>
+              </div>
+              <div class="swiper-slide  px-1 ratio ratio-21x9">
+                <img class="img-w-100" src="../assets/images/hand.png" alt="hand">
+              </div>
+              <div class="swiper-slide  px-1 ratio ratio-21x9">
+                <img class="img-w-100" src="../assets/images/screen.png" alt="screen">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="position: initial; width: 180px;"  class="swiper-button-next">
+          <img class="img-fluid" src="../assets/images/line_end_arrow_notch.png" alt="">
+        </div>
+      </div>
+      
+      <div class="custom-container mt-8 position-relative pb-lg-11 pb-12">
+        <div style="height: 40px;" class="bg-gradientX "></div>
       </div>
     </div>
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="container-fluid  bg-gradiendt">
+      <div class="container pt-lg-13 pt-12">
+        <div class="row text-white">
+          <div class="col-12 mt-lg-8 mt-6 border-bottom border-white pb-lg-8 pb-6">
+            <h2 class="fs-lg-7 fs-1 letter fw-bold">最新消息</h2>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <div class="col-12 py-lg-6 py-8 border-bottom border-white">
+            <ul class="p-0">
+              <li class="letter mb-2 d-flex align-items-center fw-bold">
+                <span class="material-symbols-outlined me-3">emergency</span>
+                2023.06.30
+              </li>
+              <li class="letter mb-9 fw-bold">
+                產品升級公告
+              </li>
+              <li class="d-lg-flex justify-content-between d-block ">
+                <p class="fw-bold">榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。</br>
+                  歡迎您了解本次升級帶來的更為卓越的性能！</p>
+                <img style="max-width: 196px;" class="h-100" src="../assets/images/line_end_arrow_notch.png" alt="">
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 py-lg-6 py-8 border-bottom border-lg-end  border-white">
+            <ul class="p-0">
+              <li class="letter mb-2 d-flex align-items-center">
+                <span class="material-symbols-outlined me-3 fw-bold">emergency</span>
+                2023.06.30
+              </li>
+              <li class="letter mb-9 fw-bold">
+                限時優惠活動
+              </li>
+              <li class="">
+                <p class="fw-bold">為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！</p>
+                <img style="max-width: 86px; height: 14px;"  src="../assets/images/line_end_arrow_notch.png" alt="">
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 py-lg-6 py-8 border-bottom border-white">
+            <ul class="p-0">
+              <li class="letter mb-2 d-flex align-items-center fw-bold">
+                <span class="material-symbols-outlined me-3">emergency</span>
+                2023.04.18
+              </li>
+              <li class="letter mb-9 fw-bold">
+                新功能上線
+              </li>
+              <li class="">
+                <p class="fw-bold">為使您的 ALPHABOX+ 更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。</p>
+                <img style="max-width: 86px; height: 14px;"  src="../assets/images/line_end_arrow_notch.png" alt="">
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 d-flex flex-column align-items-center mb-lg-6 mb-14 pt-lg-15 pt-6">
+            <a class="hvr-grow position-relative mb-lg-16 text-white" href="#">
+              <img class="animation-rolate" src="../assets/images/Linked Path Group.png" alt="查看更多">
+              <span class="position-absolute start-0 end-0 top-0 bottom-0 d-flex align-items-center justify-content-center">查看更多</span>
+            </a>
+            <p class="fw-bold align-self-end d-lg-block d-none m-0">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="container-fluid bg-gradient-use overflow-hidden">
+      <div class="container text-white pt-lg-13 pt-12 pb-lg-6 pb-14">
+        <ul class="p-0 text-white d-lg-flex mb-3">
+          <li>
+            <h2 class="fs-lg-7 fs-1 letter fw-bold">使用分享</h2>
+          </li>
+          <li class="d-lg-flex d-none align-items-center  flex-grow-1 justify-content-center fw-bold">
+            展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。
+          </li>
+        </ul>
+        <ul class="p-0">
+          <li class="d-flex align-items-center mb-lg-6 mb-4 ">01<span class="material-symbols-outlined">horizontal_rule</span>04</li>
+          <li class="fw-bold d-lg-none d-block mb-4">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</li>
+          <li><span style="font-size: 80px;" class="material-symbols-outlined me-3">emergency</span></li>
+        </ul>
+        
+          <ul class=" p-0 row row-cols-1 gy-4 d-flex d-lg-none">
+            <li style="height: 351px;" class="col bg-primary-400 p-lg-6 p-4 text-break d-flex flex-column">
+             <p class="fw-bold">Zona<span style="font-size: 8px" class="material-icons mx-2">circle</span>Taipei</p>
+             <p class="fw-bold">ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+             <p class="align-self-end mt-auto mb-0 me-auto fw-bold">
+              <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+              <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+              ALPHABOX+ Dianne
+            </p>
+            </li>
+            <li style="height:351px;" class="col bg-white p-lg-6 p-4 text-break d-flex flex-column text-black">
+              <p class="fw-bold">Lin <span style="font-size: 8px" class="material-icons mx-2">circle</span>Chiayi</p>
+              <p class="fw-bold">非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。</p>
+              <p class="align-self-end mt-auto mb-0 me-auto fw-bold">
+               <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+               <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+               ALPHABOX+ Felix
+             </p>
+             </li>
+             <li style="height: 351px;" class=" col bg-primary-400 p-lg-6 p-4 text-break d-flex flex-column">
+              <p class="fw-bold">云<span style="font-size: 8px" class="material-icons mx-2">circle</span>Kaohsiung</p>
+              <p class="fw-bold">讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！</p>
+              <p class="align-self-end mt-auto mb-0 me-auto fw-bold">
+               <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+               <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+               ALPHABOX+ Vito
+             </p>
+             </li>
+             <li style="height: 351px;" class="col bg-white p-lg-6 p-4 text-break d-flex flex-column text-black">
+              <p class="fw-bold">Zichi <span style="font-size: 8px" class="material-icons mx-2">circle</span>Kaohsiung</p>
+              <p class="fw-bold">讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！</p>
+              <p class="align-self-end mt-auto mb-0 me-auto fw-bold">
+               <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+               <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+               ALPHABOX+ Vito
+             </p>
+             </li>
+          </ul>
+        
+        <div class="swiper share-swiper  d-lg-block d-none">
+            <ul class="swiper-wrapper p-0 d-lg-flex">
+              <li style="height: 416px;" class="swiper-slide col-4 bg-primary-400 p-lg-6 p-4 text-break d-flex flex-column">
+               <p class="fw-bold">Zona<span style="font-size: 8px" class="material-icons mx-2">circle</span>Taipei</p>
+               <p class="fw-bold">ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+               <p class="align-self-end mt-auto mb-0 me-auto fw-bold">
+                <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+                <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+                ALPHABOX+ Dianne
+              </p>
+              </li>
+              <li style="height: 416px;" class="swiper-slide col-4 bg-white p-lg-6 p-4 text-break d-flex flex-column text-black">
+                <p class="fw-bold">Lin <span style="font-size: 8px" class="material-icons mx-2">circle</span>Chiayi</p>
+                <p class="fw-bold">非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。</p>
+                <p class="align-self-end mt-auto mb-0 me-auto fw-bold">
+                 <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+                 <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+                 ALPHABOX+ Felix
+               </p>
+               </li>
+               <li style="height: 416px;" class="swiper-slide col-4 bg-primary-400 p-lg-6 p-4 text-break d-flex flex-column">
+                <p class="fw-bold">云<span style="font-size: 8px" class="material-icons mx-2">circle</span>Kaohsiung</p>
+                <p class="fw-bold">讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！</p>
+                <p class="align-self-end mt-auto mb-0 me-auto fw-bold">
+                 <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+                 <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+                 ALPHABOX+ Vito
+               </p>
+               </li>
+               <li style="height: 416px;" class="swiper-slide col-4 bg-white p-lg-6 p-4 text-break d-flex flex-column text-black">
+                <p class="fw-bold">Zichi <span style="font-size: 8px" class="material-icons mx-2">circle</span>Kaohsiung</p>
+                <p class="fw-bold">讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！</p>
+                <p class="align-self-end mt-auto mb-0 me-auto fw-bold">
+                 <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+                 <span style="font-size: 16px" class="material-icons mx-2">circle</span>
+                 ALPHABOX+ Vito
+               </p>
+               </li>
+            </ul>
+        </div>
+        <div class="row share-scroll align-items-center text-white d-lg-flex d-none">
+          <div class="col-8">
+            <div class="swiper-scrollbar position-static"></div>
+          </div>
+          <div class="col-4">
+            <p class="fw-bold">SCROLL</p>
+          </div>
+        </div>
+         <p class="fw-bold d-lg-block d-none mt-17">若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</p>
+      </div>
+    </div>
+    <div class="container-fluid bg-primary-600">
+      <div class="container pt-lg-18 pt-12 pb-lg-18 pb-14">
+        <div class="row">
+          <div class="col-lg-5 text-white ">
+            <h2 class="fw-bold mb-lg-8 mb-10 letter fs-7">聯絡我<span class="letter-0">們</span></h2>
+            <div class="d-flex">
+              <span style="font-size: 12px" class="material-icons mx-2">circle</span>
+              <div style="width: 124px" class="border border-5 rounded-5 border-white bg-white"></div>
+            </div>
+            <ul class="p-0 fw-bold mt-lg-7 mt-8">
+              <li>讓科技成為您的最佳夥伴</li>
+              <li>立即體驗神奇功能並享限時優惠！</li>
+            </ul>
+          </div>
+          <div class="col-lg-7 text-white">
+            <span style="font-size: 80px;" class="material-symbols-outlined mb-3">emergency</span>
+            <form class="row gy-3" action="">
+              <input style="outline: none;" type="email" class="col-12 fw-bold fs-5 px-3 py-2" placeholder="EMAIL">
+              <textarea style="height: 120px;resize: none;outline: none;" class="col-12 fw-bold fs-5 px-3 py-2" placeholder="COMMENTS"></textarea>
+              <button class=" py-2 d-flex  align-items-center justify-content-center offset-lg-5 col-lg-7 bg-primary-200 text-white hvr-icon-grow" type="button"><span class="material-symbols-outlined me-1 hvr-icon">point_scan</span>送出</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row row-cols-lg-4 row-cols-2 g-0">
+        <div class="col bg-diane position-relative obstruct ">
+          <a  href="#"> 
+            <ul class="text-white px-lg-6 py-lg-7 px-9 py-4 d-flex flex-column align-items-center m-0 z-index-1 position-relative">
+              <li class="fs-lg-11 fs-12 fm-saira">1</li>
+              <li class="fw-bold fst-italic mt-lg-10 mt-3 mb-lg-14 mb-3 fm-shrik fs-lg-2 fs-4">Diane</li>
+              <li class="align-self-start fw-bold">知識型</li>
+              <li class="w-100 d-xxl-flex d-block align-self-start justify-content-between">
+                <p >學術領導/知識分享/智能問答</p>
+                <img style="max-width:155px ;" class="h-100" src="../assets/images/line_end_arrow_notch.png" alt="">
+              </li>
+            </ul>
+          </a>
+        </div>
+        <div class="col bg-felix position-relative obstruct ">
+          <a  href="#"> 
+            <ul class="text-white px-lg-6 py-lg-7 px-9 py-4 d-flex flex-column align-items-center m-0 z-index-1 position-relative">
+              <li class="fs-lg-11 fs-12 fm-saira">2</li>
+              <li class="fw-bold fst-italic mt-lg-10 mt-3 mb-lg-14 mb-3 fm-shrik fs-lg-2 fs-4">Felix</li>
+              <li class="align-self-start fw-bold">娛樂型</li>
+              <li class="w-100 d-xxl-flex d-block align-self-start justify-content-between">
+                <p>音樂播放/語音互動/遊戲陪伴</p>
+                <img style="width:155px ;" class="h-100" src="../assets/images/line_end_arrow_notch.png" alt="">
+              </li>
+            </ul>
+          </a>
+        </div>
+        <div class="col bg-karina position-relative obstruct ">
+          <a  href="#"> 
+            <ul class="text-white px-lg-6 py-lg-7 px-9 py-4 d-flex flex-column align-items-center m-0 z-index-1 position-relative">
+              <li class="fs-lg-11 fs-12 fm-saira">3</li>
+              <li class="fw-bold fst-italic mt-lg-10 mt-3 mb-lg-14 mb-3 fm-shrik fs-lg-2 fs-4">Karina</li>
+              <li class="align-self-start fw-bold">生活型</li>
+              <li class="w-100 d-xxl-flex d-block align-self-start justify-content-between"
+              ><p>健康提醒/日程安排/智能家居</p>
+              <img style="width:155px ;" class="h-100" src="../assets/images/line_end_arrow_notch.png" alt=""></li>
+            </ul>
+          </a>
+        </div>
+        <div class="col bg-vito position-relative obstruct ">
+          <a  href="#"> 
+            <ul class="text-white px-lg-6 py-lg-7 px-9 py-4 d-flex flex-column align-items-center m-0 z-index-1 position-relative">
+              <li class="fs-lg-11 fs-12 fm-saira">4</li>
+              <li class="fw-bold fst-italic mt-lg-10 mt-3 mb-lg-14 mb-3 fm-shrik fs-lg-2 fs-4">Vito</li>
+              <li class="align-self-start fw-bold">情感型</li>
+              <li class="w-100 d-xxl-flex d-block align-self-start justify-content-between">
+                <p>情感識別/心情分析/心靈支持</p>
+                <img style="width:155px ;" class="h-100" src="../assets/images/line_end_arrow_notch.png" alt="">
+              </li>
+            </ul>
+          </a>
+        </div>
+      </div>
+    </div>
+ 
+    
     <%- include('./layout/footer'); -%>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
